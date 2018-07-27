@@ -2,8 +2,9 @@ class Api::V1::ReviewsController < ApplicationController
   before_action :find_review, only: [:update, :show]
 
   def index
-    @reviews = Review.all
+    @reviews = Review.find_by(product_id: params[:product_id] )
     render json: @reviews
+
   end
 
   def show
