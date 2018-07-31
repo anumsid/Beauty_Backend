@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2018_07_23_141808) do
     t.string "lightURL"
     t.string "medURL"
     t.string "darkURL"
+    t.string "vidURL"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

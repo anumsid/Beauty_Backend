@@ -32,7 +32,7 @@ class Api::V1::ProductsController < ApplicationController
   private
 
   def product_params
-    params.permit(:title, :description, :category, :price, :imgURL, :lightURL, :medURL, :darkURL)
+    params.permit(:title, :description, :category, :price, :imgURL, :lightURL, :medURL, :darkURL, :vidURL)
   end
 
   def find_product

@@ -9,6 +9,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :lightURL
       t.string :medURL
       t.string :darkURL
+      t.string :vidURL
       t.timestamps
     end
   end

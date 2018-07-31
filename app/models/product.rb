@@ -9,4 +9,5 @@ class Product < ApplicationRecord
   validates :lightURL, presence: true
   validates :medURL, presence: true
   validates :darkURL, presence: true
+  validates :vidURL, presence: true
 end

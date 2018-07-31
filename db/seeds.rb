@@ -12,15 +12,15 @@ user2 = User.create(first_name: "Marie", last_name: "Sonko", username: "marie", 
 
 user3 = User.create(first_name: "Jane", last_name: "Doe", username: "Jane", email: "jane@gmail.com", password: "123456")
 
-product1 = Product.create(title:"Plum", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick1.jpeg", lightURL: "/images/lipstick1_light.jpg", medURL:"/images/lipstick1_medium.jpg", darkURL:"/images/lipstick1_dark.jpg")
+product1 = Product.create(title:"Plum", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick1.jpeg", lightURL: "/images/lipstick1_light.jpg", medURL:"/images/lipstick1_medium.jpg", darkURL:"/images/lipstick1_dark.jpg", vidURL:"https://www.youtube.com/watch?v=4PDCD9Q1i1Y")
 
-product2 = Product.create(title:"Red", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick2.jpeg", lightURL: "/images/lipstick2_light.jpg", medURL:"/images/lipstick2_medium.jpg", darkURL: "/images/lipstick2_dark.jpg")
+product2 = Product.create(title:"Red", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick2.jpeg", lightURL: "/images/lipstick2_light.jpg", medURL:"/images/lipstick2_medium.jpg", darkURL: "/images/lipstick2_dark.jpg", vidURL:"https://www.youtube.com/watch?v=ir8zXw2oC8c")
 
-product3 = Product.create(title:"Pink", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick3.jpeg", lightURL: "/images/lipstick3_light.jpg", medURL:"/images/lipstick3_medium.jpg", darkURL:"/images/lipstick3_dark.jpg")
+product3 = Product.create(title:"Pink", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick3.jpeg", lightURL: "/images/lipstick3_light.jpg", medURL:"/images/lipstick3_medium.jpg", darkURL:"/images/lipstick3_dark.jpg", vidURL:"https://www.youtube.com/watch?v=Rvez_58axSE")
 
-product4 = Product.create(title:"Nude", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick4.jpeg", lightURL: "/images/lipstick4_light.jpg", medURL:"/images/lipstick4_medium.jpg", darkURL:"/images/lipstick4_dark.jpg")
+product4 = Product.create(title:"Nude", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick4.jpeg", lightURL: "/images/lipstick4_light.jpg", medURL:"/images/lipstick4_medium.jpg", darkURL:"/images/lipstick4_dark.jpg", vidURL:"https://www.youtube.com/watch?v=mKAGH7u-t_E")
 
-product5 = Product.create(title:"Coral", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick5.jpeg", lightURL: "/images/lipstick5_light.jpg", medURL:"/images/lipstick5_medium.jpg", darkURL:"/images/lipstick5_dark.jpg")
+product5 = Product.create(title:"Coral", description:"Size: 3 g / 0.1 US oz", category:"Lipstick", price:"$18.50", imgURL:"/images/lipstick5.jpeg", lightURL: "/images/lipstick5_light.jpg", medURL:"/images/lipstick5_medium.jpg", darkURL:"/images/lipstick5_dark.jpg", vidURL:"https://www.youtube.com/watch?v=XH_rRKbzMQw")
 
 review1 = Review.create(user_id: user1.id, product_id: product1.id, content: "My favorite shade of all time!")
 
