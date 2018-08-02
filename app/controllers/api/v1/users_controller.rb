@@ -7,8 +7,8 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
-    if @user.save
+    @user = User.create(user_params)
+    if @user
       render json: @user, status: :accepted
     else
       render json: { errors: @user.errors.full_messages }, status: :unprocessible_entity
@@ -27,7 +27,7 @@ class Api::V1::UsersController < ApplicationController
   private
 
   def user_params
-     params.permit(:username, :password, :password_confirmation, :first_name, :last_name, :email)
+     params.require(:user).permit(:username, :password, :first_name, :last_name, :email)
   end
 
   def find_user

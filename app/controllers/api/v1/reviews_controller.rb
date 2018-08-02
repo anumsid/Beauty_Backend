@@ -22,7 +22,13 @@ class Api::V1::ReviewsController < ApplicationController
   end
 
   def create
-    @review = Review.new(review_params)
+    @user = User.find_by(username: params['username'])
+
+    @review =  @user.reviews.build(review_params)
+    @review.product_id = params[:product_id]
+
+    # byebug
+
     if @review.save
       render json: @review, status: :accepted
     else
@@ -33,7 +39,7 @@ class Api::V1::ReviewsController < ApplicationController
   private
 
   def review_params
-    params.permit(:user_id, :content)
+    params.require(:review).permit(params[:product_id], :content)
   end
 
   def find_review

@@ -1,5 +1,5 @@
 class ProductSerializer < ActiveModel::Serializer
-  attributes :id, :title, :description, :category, :price, :imgURL, :medURL, :lightURL, :darkURL, :reviews
+  attributes :id, :title, :description, :category, :price, :imgURL, :medURL, :lightURL, :darkURL, :reviews, :vidURL
 
   def reviews
     self.object.reviews.map do |review|
